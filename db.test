@@ -1,0 +1,4 @@
+INSERT INTO `User` (`id`, `nom`, `prenom`,`email`, `login`, `mdp`, `roles`, `token`) VALUES
+(4, 'LAPOINTE', 'Claire', `lapointe@gmail.com`, 'lapointe', 'lapointe_claire' 'employes', ""),
+(6, 'De', 'Philippe', `philippe@gmail.com`, 'philippe', 'philippe_de' 'comptable', ""),
+(5, 'Gest', 'Alain', `gest@gmail.com`, 'Allain', 'alain_gest' 'employes', ""),
