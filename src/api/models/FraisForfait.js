@@ -6,4 +6,3 @@ module.exports = (sequelize, DataTypes) => {
     }, { charset: 'latin1' });
     return FraisForfait;
   };
-  

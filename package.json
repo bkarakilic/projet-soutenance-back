@@ -8,6 +8,7 @@
     "start": "nodemon server",
     "generate:user": "node ./fixtures/users.js",
     "generate:conges": "node ./fixtures/conges.js",
+    "generate:ndf": "node ./fixtures/ndf.js",
     "delete:usersdb": "node ./fixtures/usersDelete.js"
   },
   "author": "",

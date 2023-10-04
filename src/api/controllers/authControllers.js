@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const database = require('../../../../utils/Database');
+const database = require('../../../utils/Database');
 const bcrypt = require('bcrypt');
 
 

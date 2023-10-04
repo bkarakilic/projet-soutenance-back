@@ -1,12 +1,14 @@
 const express = require('express');
-const authRoutes = require('./Authentifications/AuthRoutes');
-const userRoutes = require('./Users/usersRoutes');
-const congesRoutes = require('./Conges/congesRoutes');
+const auth = require('./auth');
+const users = require('./users');
+const conges = require('./conges');
+const ndf = require('./ndf');
 
 const router = express.Router();
 
-router.use('/auth', authRoutes);
-router.use(userRoutes);
-router.use(congesRoutes);
+router.use('/auth', auth);
+router.use(users);
+router.use(conges);
+router.use(ndf);
 
 module.exports = router;

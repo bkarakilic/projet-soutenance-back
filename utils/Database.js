@@ -2,6 +2,7 @@ const Sequelize = require('sequelize');
 const config = require('../config/config.json');
 const UserModel = require('../src/api/models/User');
 const CongesModel = require('../src/api/models/Conges');
+const Ndf = require('../src/api/models/Ndf');
 
 class Database {
   constructor() {
@@ -15,8 +16,9 @@ class Database {
   }
 
   initModels() {
-    this.User = UserModel(this.sequelize, Sequelize.DataTypes);
+    this.User   = UserModel(this.sequelize, Sequelize.DataTypes);
     this.Conges = CongesModel(this.sequelize, Sequelize.DataTypes);
+    this.Ndf    = Ndf(this.sequelize, Sequelize.DataTypes);
   }
 
   sync() {
@@ -36,5 +38,7 @@ class Database {
       });
   }
 }
+
+
 const database = new Database();
 module.exports = database;
